@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 후손 셀렉터 */
+        /* h1{color: black;}
+        div span{
+           color: royalblue;
+        } */
+
+
+        /* 자식 셀렉터 */
+        /* h1{color: black;}
+        div>p{
+           color: red; */
+
+           /* 인접형제 셀렉터 */
+           /* h1 + h2{
+            color:yellow ;
+           } */
+
+
+        /* 일반형제 셀렉터 */
+           h1~p{
+
+            color:green;
+           }
+
+
+    </style>
+</head>
+<body>
+    /* 후손 셀렉터:스페이스로 표시 selector1 selector2
+    (부모태그 안에 있는 모든 하위 요소,후손 요소라고 부름 )
+
+    자식 셀렉터:>로 표시 selector1 > selector2
+    (부모태그 안에 있는 바로 다음 레벨의 태그)
+    
+    인접형제 셀렉터:+로 표시 selector1 + selector2
+    (태그(selector1)와 동일 레벨에 위치하고,selector1의 바로 뒤에 위치하는
+    selector2를 선택.
+    즉,selector1과 selector2사이에 다른 태그 위치시 선택 안됨)
+   
+   
+    일반 형제 셀렉터:~로 표시 
+    (태그(selector1)와 동일 레벨에 위치하고,selector1의 뒤에 위치하는
+    selector2를 선택.
+    즉,selector1과 selector2사이에 다른 태그가 위치해도 선택 가능)
+    
+    
+    
+    
+    */
+    <div>
+        <h1>Dave Lee</h1>
+        <h2>잔재미 코딩</h2>
+        <p>잔재미 코딩을 운영하고 있습니다. 현업 기획자 및 개발자 입니다.</p>
+        <p><span>좋은 컨텐츠와 서비스</span>를 만드는 이에 집중하고 있습니다.</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Document</title>
+    <style>
+      div {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: 2px solid #f2b441;
+        border-radius: 10px;
+      }
+      .box1 {
+        background: #f2d541;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .box2 {
+        background: #5fb6d9;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+      .box3 {
+        background: #d90404;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .box4 {
+        background: #3b9cd9;
+        position: absolute;
+        top: 70px;
+        left: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1" style="z-index: 1000;">노랑</div>
+    <div class="box2" style="z-index: 100;">옅은파랑</div>
+    <div class="box3" style="z-index: 10;">빨강</div>
+    <div class="box4" style="z-index: 1;">짙은파랑</div>
+  </body>
+</html>
+

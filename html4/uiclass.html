@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='radio']:indeterminate + span {color: red;}
+        input[type='radio']:checked + span {color: orange;}
+        input[type='checkbox']:enabled + span {color: blue;}
+        input[type='checkbox']:disabled + span {color: green;}
+    </style>
+</head>
+<body>
+    -UI요소 상태 셀렉터-
+    enabled:UI셀렉터가 사용 가능한 상태
+    disabled:UI셀렉터가 사용 불가능한 상태
+    checked:UI셀렉터가 체크된 상태
+    indeterminate:UI셀렉터 상태가 결정되지 아낳은 상태
+    (예:체크박스에 체크가 안되었거나,라디오 버튼들이 하나도 체크되지 않은 상태)
+
+
+    <div>
+        <h1>Dave Lee</h1>
+        <a href="https://www.fun-coding.org">잔재미 코딩</a>
+        <form action="https://www.fun-coding.org/ffffff" method="get"></form>
+        <input type="radio" value="item1" name="item"><span>item1</span><br/>
+        <input type="radio" value="item2" name="item"><span>item2</span><br/>
+        <input type="checkbox" value="check1" name="check"><span>check1</span><br/>
+        <input type="checkbox" value="check2" name="check" disabled><span>check2</span><br/>
+        <input type="text" id="data" name="data"><br/>
+        <input type="sybmit" value="submit">
+    </div>
+</body>
+</html>

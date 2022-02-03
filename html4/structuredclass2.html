@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        p:nth-child(2n-1){
+            color: blue;
+        }   
+        p:nth-last-child(2n-1){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    -구조 가상 클래스 셀렉터-
+  
+    nth-child(n):부모의 첫번째 자식 요소부터 시작해서 n번째 요소 선택
+    (0이 아니라,1이 첫번째 요소)
+    nth-last-child(n):부모의 마지막 자식 요소부터 뒤에서 시작해서 n번째 요소 선택
+    (0이 아니라,1이 첫번째 요소)
+
+    n은 1부터 시작, 2n은 짝수,2n-1은 홀수와 같이 수식으로 표현 가능(숫자로 일일이
+    지정할 필요가 없음)
+
+    <div>
+        <h1>Dave Lee</h1>
+        <h2>잔재미 코딩</h2>
+        <div>
+         <p>Lorem, ipsum dolor.</p>
+         <p><span>Lorem, ipsum.</span>Lorem, ipsum dolor.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    
+    </div>
+</body>
+</html>

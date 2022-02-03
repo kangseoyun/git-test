@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color: blue;
+        }
+        p:nth-child(2){
+            color: green;
+        }   
+        p:nth-last-child(3){
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    -구조 가상 클래스 셀렉터-
+    first-child:부모의 첫번째 자식인 요소 선택
+    last-child:부모의 마지막 자식인 요소 선택
+    nth-child(n):부모의 첫번째 자식 요소부터 시작해서 n번째 요소 선택
+    (0이 아니라,1이 첫번째 요소)
+    nth-last-child(n):부모의 마지막 자식 요소부터 뒤에서 시작해서 n번째 요소 선택
+    (0이 아니라,1이 첫번째 요소)
+
+
+    <div>
+        <h1>Dave Lee</h1>
+        <h2>잔재미 코딩</h2>
+        <div>
+         <p>Lorem, ipsum dolor.</p>
+         <p><span>Lorem, ipsum.</span>Lorem, ipsum dolor.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+            <h2>first-child/last-child가 여기서는 왜 안될까요?</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><span>Lorem, ipsum.</span>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>first-child/last-child가 여기서는 왜 안될까요?</h2>
+        </div>    
+    </div>
+</body>
+</html>
